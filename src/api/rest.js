@@ -22,7 +22,7 @@ class Rest {
       return response
     } catch (e) {
       console.log('Error while connecting to api: ' + e)
-      throw e
+      alert("Please make sure API is running correctly locally")
     }
   }
 }
