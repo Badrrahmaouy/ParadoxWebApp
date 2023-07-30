@@ -15,6 +15,10 @@ class Rest {
       let response = await request.text()
       console.log(response)
 
+      if(request.status !== 200) {
+        alert(response)
+      }
+
       return response
     } catch (e) {
       console.log('Error while connecting to api: ' + e)
